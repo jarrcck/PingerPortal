@@ -4,7 +4,7 @@ from datetime import datetime
 timestamp = datetime.now()
 timestamp = timestamp.strftime("%c")
 
-with open ('hyDisplays.csv', 'r') as read_obj:
+with open ('devices.csv', 'r') as read_obj:
     csv_reader = reader(read_obj)
     hostNameList = list(csv_reader)
 
@@ -52,7 +52,7 @@ webWriter.write("""
   color: white;
 }
 </style>
-<H1> Headingley Campus Signage Portal </H1>
+<H1> Ping Portal </H1>
 
 """)
 webWriter.close()
